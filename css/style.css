@@ -4,6 +4,8 @@ body {
   padding: 0;
 }
 body {
+  position: relative;
+
   min-width: 1920px;
 
   font-weight: 400;
@@ -217,4 +219,68 @@ body {
 
 .menu-list3 .menu-list__link {
   line-height: 23px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.page-footer {
+  color: #ffffff;
+  position: absolute;
+  background: rgba(24, 71, 164, 0.9);
+  min-width: 1920px;
+  min-height: 210px;
+  bottom: 0;
+  box-shadow: 0 -15px 20px 0px rgba(0,0,0,0.4);
+}
+
+.phone {
+  float: left;
+
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 97px;
+  padding-top: 107px;
+  margin-right: 517px;
+}
+
+.logo {
+  float: left;
+  padding-top: 62px;
+}
+
+.logo img {
+  width: 319px;
+  height: 67px;
+}
+
+.copyright {
+  font-family: "Noto Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 46px;
+  padding-left: 12px;
+}
+
+.mail {
+  float: right;
+  padding-right: 116px;
+  padding-top: 110px;
+}
+
+.mail a {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
